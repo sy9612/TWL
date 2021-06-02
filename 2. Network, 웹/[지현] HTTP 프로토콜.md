@@ -122,6 +122,10 @@ CRUD 연산에 대한 요청을 할 때, 요청을 위한 Resource(URI)와 이�
 2. IP주소와 PORT번호
 3. SSL
 4. OAuth, JWT
+5. HTTP 
+6. API
+7. URI, URL
+8. JSON
 
 
 
