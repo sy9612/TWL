@@ -110,13 +110,23 @@
 - N개의 노드를 가진 트리의 높이가 O(logN)이 되어 탐색, 삽입, 삭제 연산의 수행시간이 O(logN)이 보장됩니다. 평균, 최악이 동일!
 - AVL 트리에서는 좌우 높이 차가 1보다 커지면 균형이 무너진 것입니다. 이 균형을 유지하는 방법이 복잡함 -> LL(왼쪽으로 치우친 경우), RR(오른쪽으로 치우친 경우), RL, LR(왼쪽 자식노드에 오른쪽 자식노드만 있는 경우)
 - LR
-  - ![image-20210708160459833](/Users/jeeyoungkim/Desktop/github/TIL/image/image-20210708160459833.png)
+  - ![image-20210708160459833](/Users/jeeyoungkim/Desktop/github/TWL/image/image-20210708160459833.png)
 
 
 
-# Red-black tree?
+- # Red-black tree?
 
-- 레드블랙트리는 balanced binary search tree
+  - 레드블랙트리는 balanced binary search tree
+  - 레드블랙트리가 되기 위한 4가지 조건
+    1. 루트노드의 색은 블랙
+    2. 모든 external node의 색은 블랙
+    3. 레드의 자식은 블랙 == 레드 노드가 연속으로 나올 수 없음
+    4. 모든 leaf 노드에서 블랙노드의 깊이는 같다. == leaf 노드에서 루트노드까지 가는 경로에서 만나는 블랙노드의 갯수는 같다 --> 이 조건을 만족시키면 이진탐색트리인 레드블랙트리의 높이를 logN에 바운드되도록 해줌
+  - 레드의 자식이 블랙이 아닌 레드인 경우: 더블레드 
+
+  이는 레드블랙트리의 조건에 위반하므로 고쳐줘야된다.
+
+  고치는 방법 1. Restructing 2. Recoloring
 
 # Top-Down방식이란? 
 
