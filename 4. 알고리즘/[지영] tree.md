@@ -126,7 +126,26 @@
 
   이는 레드블랙트리의 조건에 위반하므로 고쳐줘야된다.
 
-  고치는 방법 1. Restructing 2. Recoloring
+  고치는 방법 1. Restructuring 2. Recoloring
+
+  - ## Restructuring
+
+    - 나, 부모, 조부모 노드를 가지고 Restructuring 진행
+    - 1. 나, 부모, 조부모를 오름차순으로 정렬
+      2. 무조건 가운데 값을 부모로 만들고 나머지 둘을 자식으로 만듦
+      3. 올라간 가운데 값을 블랙으로 만들고 두 자식을 레드로 만듦
+    - Restructuring은 다른 서브트리에 영향을 끼치지 않기 때문에 한번의 Restructuring이면 충분! --> 레드블랙트리의 조건 4인 블랙노드의 갯수의 변화는 없기 때문에 가능
+    - Restructuring 자체의 시간복잡도는 O(1)
+    - 어떤 노드를 insertion한 뒤 일어나므로 총 수행시간은 O(logn)
+
+  - ## Recoloring
+
+    - 나, 부모, 부모의 형제, 조부모 노드를 가지고 Recoloring 진행
+    - 부모오ㅏ 부모의 형제노드를 블랙으로, 조부모를 레드로.
+    - 조부모가 트리의 루트가 아니었을 시 또 다른 double red가 발생할 수 있다.
+    - Recoloring을 위해선는 내 위치를 찾아야됨. 이진탐색트리이므로 검색하는데 O(logn)
+    - Recoloring 자체는 O(1), 최악(루트노드를 타고타고 더블레드가 계속 발생할경우)의 경우 O(logn)
+    - 따라서 Recoloring의 시간복잡도는 O(logn)
 
 # Top-Down방식이란? 
 
