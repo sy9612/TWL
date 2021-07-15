@@ -12,7 +12,7 @@
 
     - 테이블의 컬럼이 원자값을 갖도록 테이블을 분해하는 것입니다.
 
-      <img src="/Users/jeeyoungkim/Desktop/github/TIL/image/image-20210715144022705.png" alt="image-20210715144022705" style="zoom:50%;" /> ---<img src="/Users/jeeyoungkim/Desktop/github/TIL/image/image-20210715144104014.png" alt="image-20210715144104014" style="zoom:50%;" />
+      <img src="/Users/jeeyoungkim/Desktop/github/TWL/image/image-20210715144022705.png" alt="image-20210715144022705" style="zoom:50%;" /> ---<img src="/Users/jeeyoungkim/Desktop/github/TWL/image/image-20210715144104014.png" alt="image-20210715144104014" style="zoom:50%;" />
 
   - 
 
@@ -24,7 +24,7 @@
 
     - 완전 함수 종속이라는 것은 기본키의 부분집합이 결정자가 되어서 안된다는 것을 의미합니다.
 
-    - ![image-20210715163320181](/Users/jeeyoungkim/Desktop/github/TIL/image/image-20210715163320181.png)
+    - ![image-20210715163320181](/Users/jeeyoungkim/Desktop/github/TWL/image/image-20210715163320181.png)
 
       위 테이블에서 기본키는 (학생번호, 강좌이름) 즉 복합키
 
@@ -34,7 +34,7 @@
 
       그래서 테이블을 쪼갠다
 
-      ![image-20210715164255460](/Users/jeeyoungkim/Desktop/github/TIL/image/image-20210715164255460.png)
+      ![image-20210715164255460](/Users/jeeyoungkim/Desktop/github/TWL/image/image-20210715164255460.png)
 
   
 
@@ -47,7 +47,7 @@
 
     - 제3 정규화를 진행한 테이블에 대해 모든 결정자가 후보키가 되도록 테이블을 분해하는 것입니다.
 
-    - ![image-20210715164722592](/Users/jeeyoungkim/Desktop/github/TIL/image/image-20210715164722592.png)
+    - ![image-20210715164722592](/Users/jeeyoungkim/Desktop/github/TWL/image/image-20210715164722592.png)
 
       특강수강 테이블의 기본키는 (학생번호, 특강이름) --> (교수)
 
@@ -57,7 +57,7 @@
 
       그렇기 때문에 BCNF 정규화를 만족시키기 위해서 위의 테이블을 분해해야한다!
 
-      ![image-20210715165014392](/Users/jeeyoungkim/Desktop/github/TIL/image/image-20210715165014392.png)
+      ![image-20210715165014392](/Users/jeeyoungkim/Desktop/github/TWL/image/image-20210715165014392.png)
 
       이렇게!
 
