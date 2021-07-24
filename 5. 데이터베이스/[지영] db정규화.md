@@ -134,7 +134,7 @@
 
 예를 들어보겠습니다.
 
-![image-20210725063140912](/Users/jeeyoungkim/Desktop/github/TIL/image/image-20210725063140912.png)
+![image-20210725063140912](../image/image-20210725063140912.png)
 
 여기서 "울집 강아지"를 찾으려면 테이블 A->B->C->D->E->F 를 타고 내려와야지 찾을 수 있습니다.
 
