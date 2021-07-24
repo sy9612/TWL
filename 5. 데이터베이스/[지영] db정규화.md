@@ -6,7 +6,7 @@
 
   - ## 삽입이상?
 
-    - 데이터를 저장할 떄 원하지 않는 정보가 함께 삽입되는 경우
+    - 데이터를 저장할 때 원하지 않는 정보가 함께 삽입되는 경우
 
   - ## 삭제이상?
 
@@ -26,7 +26,7 @@
 
     - 테이블의 컬럼이 원자값을 갖도록 테이블을 분해하는 것입니다.
 
-      <img src="/Users/jeeyoungkim/Desktop/github/TWL/image/image-20210715144022705.png" alt="image-20210715144022705" style="zoom:50%;" /> ---<img src="/Users/jeeyoungkim/Desktop/github/TWL/image/image-20210715144104014.png" alt="image-20210715144104014" style="zoom:50%;" />
+      <img src="../image/image-20210715144022705.png" alt="image-20210715144022705" style="zoom:50%;" /> ---<img src="../image/image-20210715144104014.png" alt="image-20210715144104014" style="zoom:50%;" />
 
   - 
 
@@ -38,7 +38,7 @@
 
     - 완전 함수 종속이라는 것은 기본키의 부분집합이 결정자가 되어서 안된다는 것을 의미합니다.
 
-    - ![image-20210715163320181](/Users/jeeyoungkim/Desktop/github/TWL/image/image-20210715163320181.png)
+    - ![image-20210715163320181](../image/image-20210715163320181.png)
 
       위 테이블에서 기본키는 (학생번호, 강좌이름) 즉 복합키
 
@@ -48,7 +48,7 @@
 
       그래서 테이블을 쪼갠다
 
-      ![image-20210715164255460](/Users/jeeyoungkim/Desktop/github/TWL/image/image-20210715164255460.png)
+      ![image-20210715164255460](../image/image-20210715164255460.png)
 
   
 
@@ -57,11 +57,11 @@
     - 제2 정규화를 진행한 테이블에 대해 이행적 종속을 없애도록 테이블을 분해하는 것입니다. 여기서 이행적 종속이란 A->B, B->C가 성립할 때 A->C가 성립되는것을 의미합니다.
     - 이행적 종속을 제거하는 이유는 컬럼 내의 값이 변경될 때 변경된 컬럼 값이 영향을 미치는 다른 컬럼값도 변경해야되는 번거로움을 없애기 위함입니다.
 
-  - ## BCNF 정규화
+  - ## BCNF Boyce Codd Normal Form 정규화
 
     - 제3 정규화를 진행한 테이블에 대해 모든 결정자가 후보키가 되도록 테이블을 분해하는 것입니다.
 
-    - ![image-20210715164722592](/Users/jeeyoungkim/Desktop/github/TWL/image/image-20210715164722592.png)
+    - ![image-20210715164722592](../image/image-20210715164722592.png)
 
       특강수강 테이블의 기본키는 (학생번호, 특강이름) --> (교수)
 
@@ -71,13 +71,21 @@
 
       그렇기 때문에 BCNF 정규화를 만족시키기 위해서 위의 테이블을 분해해야한다!
 
-      ![image-20210715165014392](/Users/jeeyoungkim/Desktop/github/TWL/image/image-20210715165014392.png)
+      ![image-20210715165014392](../image/image-20210715165014392.png)
 
       이렇게!
 
 
 
+## 제4 정규화 ...
 
+
+
+
+
+
+
+## 제5 정규화.....
 
 
 
