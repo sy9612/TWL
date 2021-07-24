@@ -83,16 +83,16 @@
 - 이전 단계인 BCNF를 만족한 상태어야 합니다.
 - 다치종속이란 두 개의 독립된 컬럼이 1대 N 관계로 대응하는 것 ->>으로 종속성 표시 !!!
 
-![image-20210724210555321](/Users/jeeyoungkim/Desktop/github/TIL/image/image-20210724210555321.png)
+![image-20210724210555321](../image/image-20210724210555321.png)
 
 위 표에서 회원번호랑 주문 도서는 다치 종속성 관계:  회원번호->>주문도서
 위 표를 아래오 ㅏ같이 바꿀 수 있다
 
-![image-20210724211006563](/Users/jeeyoungkim/Desktop/github/TIL/image/image-20210724211006563.png)
+![image-20210724211006563](../image/image-20210724211006563.png)
 
 하지만 위는 회원번호랑 이름이 중복된 값이 만들어지는 단점이 있는데 이를 해결하기 위해서 제 4정규화를 진행하는 것입니다.
 
-![image-20210724211147022](/Users/jeeyoungkim/Desktop/github/TIL/image/image-20210724211147022.png)
+![image-20210724211147022](../image/image-20210724211147022.png)
 
 이렇게 두개의 릴레이션으로 분해 !!
 
@@ -104,11 +104,11 @@
 
 4차 정규화로 아래와 같은 두개의 릴레이션이 나왔다고 가정해보자.
 
-![image-20210724213809298](/Users/jeeyoungkim/Desktop/github/TIL/image/image-20210724213809298.png)
+![image-20210724213809298](../image/image-20210724213809298.png)
 
 이 릴레이션을 조인연산하면
 
-![image-20210724213900284](/Users/jeeyoungkim/Desktop/github/TIL/image/image-20210724213900284.png)
+![image-20210724213900284](../image/image-20210724213900284.png)
 
 여기에서 나타나는 조인 종속성을 제거해주는 작업을~ 해야함~
 
@@ -122,7 +122,7 @@
 
 결과적으로
 
-![image-20210724214240359](/Users/jeeyoungkim/Desktop/github/TIL/image/image-20210724214240359.png)
+![image-20210724214240359](../image/image-20210724214240359.png)
 
 이와 같은 결과가 나오게 하는것이 5차 정규화
 
